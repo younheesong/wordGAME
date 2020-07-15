@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Coming+Soon&family=Open+Sans:wght@300&display=swap');
+
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background-color:#24C6DC;
+    color:#FFf;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin:0;
+    font-family:'Coming Soon', cursive;
+}
+button{
+    cursor:pointer;
+    font-size:14px;
+}
+.settings-btn{
+    position: fixed;
+    bottom:30px;
+    left:30px;
+    width: 50px;
+    height:30px;
+    border-radius: 5px;
+}
+
+.settings{
+    position: fixed;
+    top:0;
+    width:100%;
+    left:0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6472c5;
+    padding:20px 0;
+    transform:translateY(0);
+    transition: transform 0.3s ease-in-out;
+}
+.settings.hide{
+    transform:translateY(-100%);
+}
+select{
+    width:200px;
+    font-size:15px;
+    -webkit-appearance: none;  
+    -moz-appearance: none; 
+    appearance: none;
+    padding:5px 10px;
+    border-radius: 0;
+}
+select:focus, button:focus{
+    outline:0;
+}
+.container{
+    background-color: #1ae0fa;
+    border-radius: 10px;
+    box-shadow: 0.5px 0.5px 3px 0px rgba(0,0,0,0.3);
+    padding:20px 20px;
+    width:500px;
+    position: relative;
+    text-align: center;
+    padding:5px;
+}
+
+h2{
+    background-color:#12b9cf;
+    font-size:30px;
+    margin:5px 10px 40px 10px;
+    padding:10px;
+    border-radius: 10px;
+}
+
+.time-container{
+    position: absolute;
+    top:70px;
+    left:15px;
+}
+
+.score-container{
+    position: absolute;
+    top:70px;
+    right:15px;
+}
+
+h1{
+    margin:0;
+}
+input{
+    width:300px;   
+    font-size:15px;
+    padding:10px 20px;
+    margin:5px 0 10px;
+    border:0;
+}
+
+.end-game-container{
+    display:none;
+    background-color:inherit;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:1;
+}
